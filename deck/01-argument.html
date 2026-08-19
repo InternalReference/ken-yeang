@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Argument · Ken Yeang · External Reference</title>
+<link rel="stylesheet" href="../css/style.css" />
+<style>
+  .pullquote { font-family: var(--serif); font-size: clamp(1.05rem, 1.85vw, 1.5rem); line-height: 1.38;
+    color: var(--ink); margin: 0 0 6px; max-width: 46ch; }
+  .pullquote .em { color: #2F5D3F; }
+  .qattr { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: #8A8271; margin: 0 0 4px; }
+  .caveat { border-left: 3px solid #B8924E; padding: 12px 0 12px 18px; margin-top: 20px; background: #FBF7EE; }
+  .caveat p { margin: 0; font-size: 0.92rem; line-height: 1.55; }
+  .caveat.green { border-left-color:#6E9E67; background:#F3F7F1; }
+  .figwide { width:100%; border:1px solid #d8cbb0; background:#fff; display:block; }
+  .figcap { font-size:0.76rem; color:#7A7263; margin-top:8px; letter-spacing:0.04em; }
+
+  /* ---- the ladder (five modes) ---- */
+  .ladder { margin: 20px 0 4px; border-top:1px solid #d8cbb0; }
+  .rung { display:grid; grid-template-columns: 64px 168px 1fr 1fr; gap:22px; align-items:start;
+    padding:16px 0; border-bottom:1px solid #e8dfca; }
+  .rung .cost { font-size:0.66rem; letter-spacing:0.14em; text-transform:uppercase; font-weight:700;
+    padding:4px 0 0; }
+  .rung .cost.free { color:#2F5D3F; } .rung .cost.some { color:#7E8A4F; }
+  .rung .cost.most { color:#B8924E; } .rung .cost.gives { color:#5B87A8; }
+  .rung .nm { font-weight:700; font-size:1.02rem; }
+  .rung .nm span { display:block; font-weight:400; font-size:0.78rem; color:#8A8271; margin-top:3px; letter-spacing:0.04em; }
+  .rung .wh { font-size:0.87rem; line-height:1.5; color:#5C5648; }
+  .rung .us { font-size:0.87rem; line-height:1.5; color:#2F5D3F; }
+  .rung .us b { color:#1f4a2e; }
+  .ladder-head { display:grid; grid-template-columns: 64px 168px 1fr 1fr; gap:22px;
+    font-size:0.68rem; letter-spacing:0.16em; text-transform:uppercase; color:#8A8271; padding-bottom:9px; }
+
+  /* ---- four systems ---- */
+  .sys { display:grid; grid-template-columns: repeat(4,1fr); gap:0; border:1px solid #d8cbb0; margin-top:18px; }
+  .sys > div { padding:20px 18px 22px; border-right:1px solid #e4dac4; }
+  .sys > div:last-child { border-right:0; }
+  .sys .top { height:4px; margin:-20px -18px 16px; }
+  .sys h4 { margin:0 0 8px; font-size:1.12rem; font-family:var(--serif); font-weight:400; }
+  .sys p { margin:0 0 12px; font-size:0.86rem; line-height:1.5; color:#5C5648; }
+  .sys .ask { font-size:0.82rem; line-height:1.5; color:#2F5D3F; border-top:1px solid #e8dfca; padding-top:10px; }
+  .sys .ask b { display:block; font-size:0.66rem; letter-spacing:0.14em; text-transform:uppercase; color:#8A8271; margin-bottom:4px; font-weight:700; }
+
+  /* ---- actionable list ---- */
+  .doin { border-top:1px solid #d8cbb0; margin-top:14px; }
+  .doin li { list-style:none; display:grid; grid-template-columns: 34px 1fr; gap:16px;
+    padding:13px 0; border-bottom:1px solid #e8dfca; align-items:start; }
+  .doin ul { padding:0; margin:0; }
+  .doin .dn { font-family:var(--serif); color:#2F5D3F; font-size:1.05rem; }
+  .doin .dt { font-weight:700; font-size:0.95rem; display:block; margin-bottom:3px; }
+  .doin .db { font-size:0.86rem; line-height:1.5; color:#5C5648; }
+  .takeaway { display:grid; grid-template-columns: repeat(3,1fr); gap:26px; margin-top:8px; }
+  .takeaway div { border-top:2px solid #6E9E67; padding-top:13px; }
+  .takeaway .tk { font-family:var(--serif); font-size:1.15rem; margin-bottom:6px; }
+  .takeaway p { margin:0; font-size:0.88rem; line-height:1.55; color:#5C5648; }
+</style>
+</head>
+<body>
+
+<a href="index.html#menu" class="back-btn" id="backBtn">‹&nbsp; Contents</a>
+
+<!-- ===================== CHAPTER OPEN ===================== -->
+<section class="chapter-open slide">
+  <p class="kicker">Chapter 01</p>
+  <h1>The Argument</h1>
+  <p class="intro">Who he is, and what he actually claims. Fifty years of theory reduced to the parts we can use on a real project.</p>
+  <a href="#argument-index" class="scroll-cue" style="position:absolute; bottom:34px; left:8vw; transform:none;">
+    <span>Index</span><span class="arrow"></span>
+  </a>
+</section>
+
+<!-- ===================== INDEX ===================== -->
+<section class="vindex slide" id="argument-index">
+  <h2>The Argument</h2>
+  <ul class="toc">
+    <li><a href="#the-man"><span class="tnum">01</span><span class="ttl">The Man</span><span class="tds">Formation, practice, and the one failure worth knowing about.</span></a></li>
+    <li><a href="#ecodesign"><span class="tnum">02</span><span class="ttl">Ecodesign</span><span class="tds">His one idea: join the building to the living system around it.</span></a></li>
+    <li><a href="#ecomimesis"><span class="tnum">03</span><span class="ttl">Ecomimesis</span><span class="tds">Copy how an ecosystem works, not how a plant looks.</span></a></li>
+    <li><a href="#five-modes"><span class="tnum">04</span><span class="ttl">The Energy Ladder</span><span class="tds">The order to make decisions in. Spend nothing before you spend something.</span></a></li>
+    <li><a href="#infrastructures"><span class="tnum">05</span><span class="ttl">Four Systems, One Design</span><span class="tds">Nature, water, engineering, people. Designed together or not at all.</span></a></li>
+    <li><a href="#the-core"><span class="tnum">06</span><span class="ttl">The Service Core</span><span class="tds">His signature move, proven across three buildings.</span></a></li>
+    <li><a href="#health"><span class="tnum">07</span><span class="ttl">Buildings That Make You Well</span><span class="tds">Salutogenic design, and how to actually build it in.</span></a></li>
+  </ul>
+</section>
+
+<!-- ===================== 01 THE MAN ===================== -->
+<section class="section slide" id="the-man">
+  <p class="eyebrow green">01 · The Man</p>
+  <h2>An architect who trained as an ecologist.</h2>
+
+  <div class="split base-split">
+    <div>
+      <p class="lead" style="margin-bottom:4px;">Most architects who talk about ecology mean it as a metaphor. Yeang studied it as a science, and joined the scientific society to prove it.</p>
+      <ul class="points fade-in">
+        <li><span class="pi">01</span><div class="ptxt"><span class="psub">Cambridge, from 1971</span><span class="pbody">Began doctoral research on ecological design after the Architectural Association in London. Among the first architects anywhere to take a PhD on the subject.</span></div></li>
+        <li><span class="pi">02</span><div class="ptxt"><span class="psub">British Ecological Society, 1975</span><span class="pbody">He joined a scientific society, not an architectural one. He also took ecology coursework at Cambridge, and studied ecological land-use planning under Ian McHarg at Pennsylvania.</span></div></li>
+        <li><span class="pi">03</span><div class="ptxt"><span class="psub">Kuala Lumpur, mid-1970s</span><span class="pbody">He did not found his practice. He joined a firm started by Tengku Robert Hamzah and became a shareholding partner. Hamzah had studied tropical architecture under Otto Koenigsberger, so the climate science came through both men.</span></div></li>
+        <li><span class="pi">04</span><div class="ptxt"><span class="psub">Still in the prototype</span><span class="pbody">He has lived in the Roof-Roof House, his own 1984 experiment in passive cooling, for forty years. Around 200 built projects since.</span></div></li>
+      </ul>
+    </div>
+    <div class="base-imgs fade-in d1">
+      <div class="imgslot filled" style="background-image:url('../assets/mesiniaga/archdaily/IAA19294.jpg')"><span class="cap"><b>Menara Mesiniaga</b>Subang Jaya, 1992</span></div>
+    </div>
+  </div>
+
+  <div class="caveat fade-in">
+    <p><b>Know this before anyone else finds it.</b> His attempt to scale internationally failed. Llewelyn Davies Yeang ran from 2005 and went into liquidation in April 2013, costing around 35 London jobs. Two further UK companies he set up were dissolved in 2014 and 2019. The trade press blamed bad debt and an international pipeline that never arrived, not his conduct. The Kuala Lumpur practice has run continuously for about fifty years. Tengku Robert Hamzah died in 2025.</p>
+  </div>
+
+  <p class="src"><b>Sources</b><span class="s">Australian Institute of Architects; Wolfson College Cambridge interview.</span><span class="s">Architects' Journal and Building, 2006 and 2013; UK Companies House records.</span><span class="s">PAM tribute to Tengku Robert Hamzah, Nov 2025. Founding date contested: 1975, 1976 or 1977.</span></p>
+</section>
+
+<!-- ===================== 02 ECODESIGN ===================== -->
+<section class="section slide" id="ecodesign">
+  <p class="eyebrow green">02 · Ecodesign</p>
+  <h2>Join the building to what was already living there.</h2>
+
+  <div class="split base-split">
+    <div>
+      <p class="lead" style="margin-bottom:4px;">Strip away the vocabulary and he has one idea. A site is a living system before we arrive. A building either joins that system or interrupts it. His whole career is about joining.</p>
+      <ul class="points fade-in">
+        <li><span class="pi">01</span><div class="ptxt"><span class="psub">Design it like a transplant, not an object</span><span class="pbody">His own image is a prosthesis: a made thing joined to a living body without being rejected by it. That means matching what is already there physically, in how systems flow, and over time as both change.</span></div></li>
+        <li><span class="pi">02</span><div class="ptxt"><span class="psub">Nature needs to move, so keep it connected</span><span class="pbody">Wildlife lives in patches joined by corridors. Cut the corridor and the patch dies, however green it looks. This, not aesthetics, is the real argument for planting that runs unbroken from the ground upward.</span></div></li>
+        <li><span class="pi">03</span><div class="ptxt"><span class="psub">A green building on its own is a dead end</span><span class="pbody">If our planting connects to nothing, it is a garden on a shelf. If it links to the ground, to a park, to a wadi system, it is habitat. The test is connection, not quantity.</span></div></li>
+      </ul>
+    </div>
+    <div class="base-imgs fade-in d1">
+      <div class="imgslot filled" style="background-image:url('../assets/mesiniaga/facade-terraced-gardens.jpg')"><span class="cap"><b>Terraced planting</b>Mesiniaga façade</span></div>
+    </div>
+  </div>
+
+  <div class="caveat green fade-in">
+    <p><b>One thing people get backwards.</b> Climate-responsive design sits <i>inside</i> ecological design, not alongside it. Shading and ventilation are one part of a larger argument about the living system. He says this repeatedly, and it is the difference between a comfortable building and an ecological one.</p>
+  </div>
+
+  <p class="src"><b>Sources</b><span class="s">Yeang, Strategies for Green Design, 2009; RIBA Journal, Hindsight interview.</span><span class="s">His named influences: Ian McHarg, Alfred North Whitehead, Ludwig von Bertalanffy.</span></p>
+</section>
+
+<!-- ===================== 03 ECOMIMESIS ===================== -->
+<section class="section slide" id="ecomimesis">
+  <p class="eyebrow">03 · Ecomimesis</p>
+  <h2>Copy how an ecosystem works, not how a plant looks.</h2>
+
+  <div class="cards c3">
+    <div class="card green-top fade-in">
+      <div class="k">01</div><h3>The distinction</h3>
+      <p>Copying a leaf or a termite mound is <b>biomimicry</b>. Copying how a whole ecosystem behaves — its cycles, its flows, who eats what, where the water goes — is what he calls <b>ecomimesis</b>. Same instinct, much bigger scale.</p>
+    </div>
+    <div class="card green-top fade-in d1">
+      <div class="k">02</div><h3>What it means in practice</h3>
+      <p>Design the building as a small ecosystem. Water arrives, is used, is cleaned, is used again. Waste from one part feeds another. Nothing leaves that could have stayed. The form follows from the flows.</p>
+    </div>
+    <div class="card green-top fade-in d2">
+      <div class="k">03</div><h3>The test to apply</h3>
+      <p>Point at any planted surface on our drawings and ask: <b>what job does this do?</b> Habitat, shade, water, food, cooling. If the answer is "it looks green", it is decoration and it will be the first thing cut.</p>
+    </div>
+  </div>
+
+  <p class="pullquote fade-in d2" style="margin-top:26px;">"Ecological design is still very much in its infancy. <span class="em">The totally green building or green city does not yet exist</span>."</p>
+  <p class="qattr">Ken Yeang, 2009</p>
+
+  <p class="src"><b>Worth remembering</b><span class="s">An independent reviewer criticised one of his own buildings for planting that was decorative rather than shading. Even he fails this test. See chapter 3.</span></p>
+</section>
+
+<!-- ===================== 04 THE ENERGY LADDER ===================== -->
+<section class="section slide" id="five-modes">
+  <p class="eyebrow green">04 · The Energy Ladder</p>
+  <h2>Spend nothing before you spend something.</h2>
+
+  <p class="lead" style="max-width:80ch;">This is his most useful contribution and it is not a theory, it is a <b>working order</b>. Most projects begin with the mechanical solution and add greenery afterwards. He begins at the top of this ladder and only moves down when the rung above genuinely runs out. Every step down costs money to install and money forever after.</p>
+
+  <div class="ladder fade-in">
+    <div class="ladder-head"><div>Energy</div><div>Rung</div><div>What it is</div><div>What it looks like on our tower</div></div>
+
+    <div class="rung">
+      <div class="cost free">Free</div>
+      <div class="nm">Do it with form<span>"passive"</span></div>
+      <div class="wh">Everything you get for nothing once the building is shaped and oriented. Where it faces, how deep it is, what shades it, what mass it has, where the plants are.</div>
+      <div class="us">Long axis north-south. Cores buffering east and west. Deep shading. Mass that soaks up the day. <b>This is where the design is won or lost.</b></div>
+    </div>
+
+    <div class="rung">
+      <div class="cost some">A little</div>
+      <div class="nm">Give it a nudge<span>"mixed mode"</span></div>
+      <div class="wh">Passive design helped along by something small and cheap. Fans, openable vents, a pump. Used where comfort can float rather than be held to a set point.</div>
+      <div class="us">Shaded outdoor rooms, sky courts and terraces, evaporatively cooled so they are usable in summer. Conditioned space still gets conditioned; this is about winning back the outdoor and semi-outdoor areas we would otherwise write off for four months of the year.</div>
+    </div>
+
+    <div class="rung">
+      <div class="cost most">Full cost</div>
+      <div class="nm">Condition it properly<span>"full mode"</span></div>
+      <div class="wh">Full air conditioning and artificial light, for the spaces that genuinely need a held temperature.</div>
+      <div class="us">Offices, residences, hotel rooms. <b>Not a failure.</b> The point is that it covers what is left, not everything by default.</div>
+    </div>
+
+    <div class="rung">
+      <div class="cost gives">Gives back</div>
+      <div class="nm">Make it produce<span>"productive"</span></div>
+      <div class="wh">The building generates rather than only consumes. Power, water, food, cooling.</div>
+      <div class="us">PV on the roof and the hot façades. Treated water reused for irrigation. Riyadh's sun is the one resource we have in surplus.</div>
+    </div>
+  </div>
+
+  <div class="caveat green fade-in d1">
+    <p><b>And in a real building, all of these at once.</b> Yeang's fifth term is simply the honest admission that a tower runs different rungs in different places, on different days. That is not a compromise. It is the point. <b>What we should be able to state for Burj Fitrah: which rung each space sits on, and why.</b></p>
+  </div>
+
+  <div class="caveat fade-in d1">
+    <p><b>The line worth stealing.</b> At the Singapore National Library he put the book collections on full air conditioning and said so plainly, calling it "an acknowledgement that comfort is as much a question of lifestyle and perception as it is about cost and energy." He does not pretend passive design goes everywhere. For a Riyadh client who expects full conditioning, that honesty is far more persuasive than purism.</p>
+  </div>
+
+  <p class="src"><b>Sources</b><span class="s">National Library Board Building presentation panels, T.R. Hamzah &amp; Yeang, AKAA 3120.SIN.</span><span class="s">Yeang's own terms are passive, mixed, full, productive and composite mode.</span></p>
+</section>
+
+<!-- ===================== 05 FOUR SYSTEMS ===================== -->
+<section class="section slide" id="infrastructures">
+  <p class="eyebrow">05 · Four Systems, One Design</p>
+  <h2>A building is four systems, not one.</h2>
+
+  <p class="lead" style="max-width:80ch;">Normally these are four separate consultant packages that meet at coordination meetings and fight over space. His argument is that they are one system, and that whichever is scarcest on your site should drive the design. <b>On our site that is water.</b></p>
+
+  <div class="sys fade-in">
+    <div>
+      <div class="top" style="background:#6E9E67;"></div>
+      <h4>Nature</h4>
+      <p>The living layer. Soil, planting, habitat, the species that were on the site before us and the ones we could bring back.</p>
+      <div class="ask"><b>Ask on our project</b>What lives here now, and does our tower connect it to the ground or cut it off?</div>
+    </div>
+    <div>
+      <div class="top" style="background:#5B87A8;"></div>
+      <h4>Water</h4>
+      <p>Every drop in and out. Supply, irrigation, waste, reuse, and water used deliberately as a cooling device.</p>
+      <div class="ask"><b>Ask on our project</b>What is our annual water budget, where does it come from, and can we say it out loud?</div>
+    </div>
+    <div>
+      <div class="top" style="background:#9A9384;"></div>
+      <h4>Engineering</h4>
+      <p>Structure, envelope, services, energy. The built and mechanical layer. He deliberately ranks it below the two above.</p>
+      <div class="ask"><b>Ask on our project</b>What is the machinery covering that better shaping could have handled for free?</div>
+    </div>
+    <div>
+      <div class="top" style="background:#B8924E;"></div>
+      <h4>People</h4>
+      <p>Use, behaviour, regulation, ownership, who is allowed in and who maintains it in year fifteen.</p>
+      <div class="ask"><b>Ask on our project</b>Who waters the planting, who pays for it, and does the public reach the green at all?</div>
+    </div>
+  </div>
+
+  <div class="caveat green fade-in d1">
+    <p><b>Why this is worth using rather than skipping.</b> It forces the water conversation to the front instead of leaving it to a late-stage MEP note. In Riyadh water is the constraint that decides how much greenery is honest. Naming that early, in a structured way, is what separates a real ecological proposal from a rendered one.</p>
+  </div>
+
+  <p class="src"><b>Sources</b><span class="s">Saving the Planet by Design, Routledge, 2019, chapter 4, where he calls the four together a "quatrobrid" system.</span><span class="s">His own chapter names: nature-based, hydrological, technological, anthropocentric infrastructure.</span></p>
+</section>
+
+<!-- ===================== 06 THE SERVICE CORE ===================== -->
+<section class="section slide" id="the-core">
+  <p class="eyebrow green">06 · The Service Core</p>
+  <h2>Put the lifts where the sun is worst.</h2>
+
+  <p class="lead" style="max-width:80ch;">His single most portable move, and the one he says he is best known for. Lifts, stairs, plant rooms and lavatories do not need a view or a stable temperature. Put them on the face taking the worst solar load, and they become a thick thermal shield in front of the space people actually occupy. A large part of the cooling problem is then solved by <b>planning</b>, before any machinery is specified.</p>
+
+  <div class="cards c3">
+    <div class="card fade-in"><div class="k">1992</div><h3>Menara Mesiniaga</h3><p>Core on the <b>east</b>, blocking the morning sun. The Aga Khan reviewer noted the peripheral core meant no high-pressure ductwork was needed at all.</p></div>
+    <div class="card fade-in d1"><div class="k">1998</div><h3>Menara UMNO</h3><p>Core on the <b>east</b> again. Their own drawing is annotated "service cores on east provides shade in the morning".</p></div>
+    <div class="card fade-in d2"><div class="k">2004</div><h3>National Library</h3><p>Cores as thermal buffers to the <b>north-west and south-west</b>. Same logic, orientation tuned to a different site.</p></div>
+  </div>
+
+  <img class="figwide fade-in d2" src="../assets/national-library-singapore/nl-panel-2-p-02.png" alt="Passive-mode low-energy design strategies, including the Composite of Thermal Buffers diagram" style="margin-top:26px;" />
+  <p class="figcap">National Library Board Building strategy panel. The lower-right diagram, <b>Composite of Thermal Buffers</b>, shows the whole idea in one frame: screens, service core, and an entire block used as shielding. © T.R. Hamzah &amp; Yeang / Aga Khan Trust for Culture.</p>
+
+  <div class="caveat green fade-in">
+    <p><b>Take this one into Riyadh.</b> It works <b>harder</b> for us than it did for him. At our latitude the punishing loads are low morning and afternoon sun striking east and west façades, which a horizontal louvre cannot stop and a deep occupied buffer can. It also produces the long north-south plan a desert tower wants anyway. Three buildings, one move, adjusted each time to the local worst case.</p>
+  </div>
+</section>
+
+<!-- ===================== 07 HEALTH ===================== -->
+<section class="section slide" id="health">
+  <p class="eyebrow green">07 · Buildings That Make You Well</p>
+  <h2>Not "does no harm". Actively makes you better.</h2>
+
+  <div class="split base-split">
+    <div>
+      <p class="lead" style="margin-bottom:4px;"><b>Salutogenic design</b> is the idea that a building should measurably improve the health of the people in it, rather than merely avoid making them ill. Most green building standards aim at the second. This aims at the first, and it is the strand of Yeang's work closest to our <b class="accent-green">Holistic</b> requirement.</p>
+      <p style="font-size:0.9rem; line-height:1.6; color:#5C5648; margin-top:14px;">The two halves fit together: ecology supplies clean air, clean water, food and contact with nature. Health design supplies the human half — daylight, movement, quiet, and a building people can read and feel in control of.</p>
+    </div>
+    <div class="base-imgs fade-in d1">
+      <div class="imgslot filled" style="background-image:url('../assets/national-library-singapore/photo-courtyard-reading-04.png')"><span class="cap"><b>Reading on a planted courtyard</b>National Library, Singapore</span></div>
+    </div>
+  </div>
+
+  <p class="eyebrow" style="margin-top:26px;">How it actually gets built</p>
+  <div class="doin fade-in">
+    <ul>
+      <li><span class="dn">01</span><div><span class="dt">Daylight and a view out, from every occupied desk</span><span class="db">The most evidenced single health factor in buildings. Drives floor-plate depth, so it is a massing decision, not a fit-out one. Decide it now.</span></div></li>
+      <li><span class="dn">02</span><div><span class="dt">Design the movement in, don't leave it to a gym</span><span class="db">Generous, daylit, pleasant stairs placed before the lifts. Walkable routes through the podium. Sky courts people cross rather than look at.</span></div></li>
+      <li><span class="dn">03</span><div><span class="dt">Air people can verify</span><span class="db">Filtration sized for dust, not just for code, and air quality displayed publicly in lobbies. In Riyadh this is a genuine amenity and a sales argument.</span></div></li>
+      <li><span class="dn">04</span><div><span class="dt">Contact with nature at eye level</span><span class="db">Planting you can touch, smell and sit in, not planting you look at from across an atrium. It has to be within reach to do the work.</span></div></li>
+      <li><span class="dn">05</span><div><span class="dt">Let the temperature vary, on purpose</span><span class="db">A gradient from outside to core beats a hard step from 44 °C into 22 °C. People acclimatise, feel more comfortable, and the building spends less doing it.</span></div></li>
+      <li><span class="dn">06</span><div><span class="dt">Quiet, and places to be alone</span><span class="db">Acoustic control and retreat space are consistently underweighted in towers and consistently top the list in occupant surveys.</span></div></li>
+    </ul>
+  </div>
+
+  <p class="src"><b>Sources</b><span class="s">Yeang &amp; Dilani (eds), <i>Ecological and Salutogenic Design for a Sustainable Healthy Global Society</i>, Cambridge Scholars, 2021.</span><span class="s">The term comes from Aaron Antonovsky's work on what generates health rather than what causes disease.</span><span class="s">Honest note: health entered Yeang's framework late, in 2021, through this collaboration. It is where he arrived, not where he started.</span></p>
+</section>
+
+<!-- ===================== CLOSING ===================== -->
+<section class="closing slide">
+  <p class="eyebrow">Take into chapter two</p>
+  <h2 class="pbn-title">Three things to hold on to.</h2>
+
+  <div class="takeaway">
+    <div>
+      <div class="tk">Start free</div>
+      <p>Shape, orientation and the service core before any machinery. If we cannot say which rung of the ladder each space sits on, we have not designed it yet.</p>
+    </div>
+    <div>
+      <div class="tk">Water decides the greenery</div>
+      <p>How much planting is honest on this site is a water question, not a rendering question. Answer it early and out loud.</p>
+    </div>
+    <div>
+      <div class="tk">Every green surface needs a job</div>
+      <p>Shade, habitat, cooling, food. Anything that is only there to look green will be the first thing value-engineered out.</p>
+    </div>
+  </div>
+</section>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

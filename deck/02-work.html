@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Work · Ken Yeang · External Reference</title>
+<link rel="stylesheet" href="../css/style.css" />
+<style>
+  .figwide { width:100%; border:1px solid #d8cbb0; background:#fff; display:block; }
+  .figcap { font-size:0.76rem; color:#7A7263; margin-top:8px; letter-spacing:0.04em; }
+  .caveat { border-left: 3px solid #B8924E; padding: 12px 0 12px 18px; margin-top: 20px; background: #FBF7EE; }
+  .caveat p { margin: 0; font-size: 0.92rem; line-height: 1.55; }
+  .caveat.green { border-left-color:#6E9E67; background:#F3F7F1; }
+  .factline { display:flex; flex-wrap:wrap; gap:0; border-top:1px solid #d8cbb0; border-bottom:1px solid #d8cbb0; margin:18px 0 4px; }
+  .factline div { flex:1 1 0; min-width:118px; padding:13px 15px; border-right:1px solid #e4dac4; }
+  .factline div:last-child { border-right:0; }
+  .factline .n { font-family:var(--serif); font-size:1.42rem; color:#2F5D3F; line-height:1.1; }
+  .factline .l { font-size:0.73rem; color:#7A7263; margin-top:5px; letter-spacing:0.05em; }
+  .status { display:inline-block; font-size:0.64rem; letter-spacing:0.16em; text-transform:uppercase; font-weight:700;
+    padding:4px 10px; border-radius:2px; vertical-align:middle; margin-left:12px; }
+  .status.built { background:#E4EEE0; color:#2F5D3F; }
+  .status.unbuilt { background:#EFE7D6; color:#8A6D2B; }
+
+  /* hero image for each project */
+  .phero { width:100%; height:clamp(260px, 38vh, 420px); object-fit:cover; display:block;
+    border:1px solid #d8cbb0; background:#f0ece2; }
+  .pgrid { display:grid; grid-template-columns: 1.35fr 1fr; gap:18px; align-items:start; margin:18px 0 4px; }
+  .pgrid .col img { width:100%; height:clamp(120px,17vh,190px); object-fit:cover; display:block;
+    border:1px solid #d8cbb0; background:#f0ece2; margin-bottom:18px; }
+  .pgrid .col img:last-child { margin-bottom:0; }
+
+  /* zoom affordance */
+  .zoomable { cursor: zoom-in; transition: filter .18s ease; }
+  .zoomable:hover { filter: brightness(1.04) saturate(1.03); }
+  .zoomhint { font-size:0.7rem; color:#9A9384; letter-spacing:0.1em; text-transform:uppercase; margin-top:6px; }
+
+  /* works list */
+  .worklist { font-size:0.86rem; }
+  .worklist td, .worklist th { padding-top:7px; padding-bottom:7px; }
+  .st { display:inline-block; font-size:0.64rem; letter-spacing:0.1em; text-transform:uppercase;
+    font-weight:700; padding:3px 8px; border-radius:2px; white-space:nowrap; }
+  .st.b { background:#E4EEE0; color:#2F5D3F; }
+  .st.u { background:#EFE7D6; color:#8A6D2B; }
+  .st.n { background:#EEEAE1; color:#8A8271; }
+
+  /* lightbox */
+  .lb { position:fixed; inset:0; z-index:9999; background:rgba(18,20,16,0.94); display:none;
+    align-items:center; justify-content:center; flex-direction:column; padding:3vh 4vw; }
+  .lb.open { display:flex; }
+  .lb img { max-width:100%; max-height:86vh; object-fit:contain; box-shadow:0 10px 60px rgba(0,0,0,0.5); }
+  .lb .cap { color:rgba(255,255,255,0.82); font-size:0.82rem; margin-top:14px; text-align:center; max-width:80ch; line-height:1.5; }
+  .lb .x { position:absolute; top:18px; right:26px; color:#fff; font-size:2rem; line-height:1; cursor:pointer;
+    opacity:0.7; font-family:var(--serif); }
+  .lb .x:hover { opacity:1; }
+
+</style>
+</head>
+<body>
+
+<a href="index.html#menu" class="back-btn" id="backBtn">‹&nbsp; Contents</a>
+
+<!-- ===================== CHAPTER OPEN ===================== -->
+<section class="chapter-open slide">
+  <p class="kicker">Chapter 02</p>
+  <h1>The Work</h1>
+  <p class="intro">Seven projects, from his own house to a national library. What each one was testing, and what it teaches us.</p>
+  <a href="#work-index" class="scroll-cue" style="position:absolute; bottom:34px; left:8vw; transform:none;">
+    <span>Index</span><span class="arrow"></span>
+  </a>
+</section>
+
+<!-- ===================== INDEX ===================== -->
+<section class="vindex slide" id="work-index">
+  <h2>The Work</h2>
+  <ul class="toc">
+    <li><a href="#roof-roof"><span class="tnum">01</span><span class="ttl">Roof-Roof House</span><span class="tds">1984. A roof above the roof. The idea everything else grows from.</span></a></li>
+    <li><a href="#mesiniaga"><span class="tnum">02</span><span class="ttl">Menara Mesiniaga</span><span class="tds">1992. The spiralling sky courts, and what the shading was worth in money.</span></a></li>
+    <li><a href="#umno"><span class="tnum">03</span><span class="ttl">Menara UMNO</span><span class="tds">1998. Wing walls that catch the wind and push it through the plan.</span></a></li>
+    <li><a href="#turf-club"><span class="tnum">04</span><span class="ttl">Selangor Turf Club</span><span class="tds">1993. A roof built as louvred leaves, using the Venturi effect.</span></a></li>
+    <li><a href="#national-library"><span class="tnum">05</span><span class="ttl">National Library</span><span class="tds">2004. Nine-metre blades, eco-cells, and the whole method on one sheet.</span></a></li>
+    <li><a href="#solaris"><span class="tnum">06</span><span class="ttl">Solaris</span><span class="tds">2011. A 1.5 kilometre planted ramp that never breaks.</span></a></li>
+    <li><a href="#editt"><span class="tnum">07</span><span class="ttl">EDITT Tower</span><span class="tds">A closed-loop tower: living wall, water reuse, biogas.</span></a></li>
+    <li><a href="#project-index"><span class="tnum">08</span><span class="ttl">Works</span><span class="tds">Every project we found, built and unbuilt.</span></a></li>
+    <li><a href="#the-pattern"><span class="tnum">09</span><span class="ttl">The Pattern</span><span class="tds">Which of these ideas actually get built.</span></a></li>
+  </ul>
+</section>
+
+<!-- ===================== 01 ROOF-ROOF HOUSE ===================== -->
+<section class="section slide" id="roof-roof">
+  <p class="eyebrow green">01 · Roof-Roof House, Selangor <span class="status built">Built 1984</span></p>
+  <h2>A roof above the roof.</h2>
+
+  <img class="phero zoomable fade-in" src="../assets/roof-roof-house/roof-roof-house.webp"
+       data-cap="Roof-Roof House, Selangor, 1984. The curved louvred upper roof is the 'environmental filter'. © T.R. Hamzah &amp; Yeang." alt="Roof-Roof House showing the curved louvred upper roof" />
+  <p class="zoomhint">Click any image to enlarge</p>
+
+  <div class="cards c3" style="margin-top:20px;">
+    <div class="card green-top fade-in"><div class="k">01</div><h3>A filter, not a lid</h3><p>The curved upper structure is a solar screen floating clear of the house. Its louvres are angled to let in soft morning light from the east and block the hard afternoon sun, while hot air escapes between the two layers.</p></div>
+    <div class="card green-top fade-in d1"><div class="k">02</div><h3>Four adjustable layers</h3><p>He describes the house as a set of <b>environmental filters</b> the occupant tunes: the louvred roof, the walls angled to deflect breeze inward, openable screens, and the pool that cools incoming air.</p></div>
+    <div class="card green-top fade-in d2"><div class="k">03</div><h3>Every tower is this, scaled</h3><p>Sun-path calibration, a layered envelope, and the roof treated as a shading device rather than a weathering surface. Look for these three in everything that follows.</p></div>
+  </div>
+
+  <div class="caveat green fade-in">
+    <p><b>He built the prototype first and then moved into it.</b> Forty years later he still lives there. Before the books, before the towers, the idea was tested at full size on himself. That is a standard worth holding ourselves to.</p>
+  </div>
+
+  <p class="src"><b>Sources</b><span class="s">T.R. Hamzah &amp; Yeang project page; RIBA Journal, Hindsight interview.</span><span class="s">Dated variously 1983–84 and 1985.</span></p>
+</section>
+
+<!-- ===================== 02 MESINIAGA ===================== -->
+<section class="section slide" id="mesiniaga">
+  <p class="eyebrow">02 · Menara Mesiniaga, Subang Jaya <span class="status built">Built 1992</span></p>
+  <h2>Sky courts that spiral, and shading that pays for itself.</h2>
+
+  <div class="pgrid">
+    <img class="phero zoomable fade-in" style="height:clamp(300px,44vh,470px);" src="../assets/mesiniaga/archdaily/Mesiniaga_flickr_user_joshli.jpg"
+         data-cap="Menara Mesiniaga, IBM Malaysia headquarters. The recessed sky courts spiral up the façade, each shading the floor below. Photo via ArchDaily, Flickr user joshli." alt="Menara Mesiniaga seen from below" />
+    <div class="col fade-in d1">
+      <img class="zoomable" src="../assets/mesiniaga/facade-aluminium-sunscreens.jpg"
+           data-cap="Aluminium sunscreens, sized differently on each orientation. © Aga Khan Trust for Culture." alt="Aluminium sunscreen detail" />
+      <img class="zoomable" src="../assets/mesiniaga/archdaily/Skyterrace.jpg"
+           data-cap="A sky terrace. Usable outdoor room, shading device for the floor below, and planting bed in one. Photo via ArchDaily." alt="Sky terrace" />
+    </div>
+  </div>
+
+  <div class="factline fade-in">
+    <div><div class="n">15</div><div class="l">storeys, IBM Malaysia HQ</div></div>
+    <div><div class="n">12,346</div><div class="l">m² total floor area</div></div>
+    <div><div class="n">East</div><div class="l">service core, blocking the morning sun</div></div>
+    <div><div class="n">1995</div><div class="l">Aga Khan Award for Architecture</div></div>
+  </div>
+
+  <div class="caveat green fade-in d1">
+    <p><b>What the shading was worth, in money.</b> At Yeang's request his engineers <b>Norman Disney &amp; Young</b> recalculated the cooling load as if the same building had been built as a plain unshaded curtain-wall tower. Stripping the sunscreens and balcony shading added <b>125 kW of cooling load</b>, US$160,000 to install, and <b class="accent-green">US$42,000 every year</b> to run. A design-stage figure, but third-party, quantified, and expressed as running cost rather than virtue.</p>
+  </div>
+
+  <p class="src"><b>Sources</b><span class="s">Menara Mesiniaga 1995 Technical Review, Kamran Safamanesh, Aga Khan Award for Architecture.</span><span class="s">It also came in around a third cheaper per unit area than a comparable Cesar Pelli tower then under construction.</span></p>
+</section>
+
+<!-- ===================== 03 MENARA UMNO ===================== -->
+<section class="section slide" id="umno">
+  <p class="eyebrow green">03 · Menara UMNO, Penang <span class="status built">Built 1998</span></p>
+  <h2>Wing walls that catch the wind.</h2>
+
+  <div class="pgrid">
+    <img class="phero zoomable fade-in" style="height:clamp(300px,44vh,470px);" src="../assets/menara-umno/exterior-facade.jpg"
+         data-cap="Menara UMNO, Georgetown, Penang, 1998. The projecting vertical fins on the façade are the wing walls. © Aga Khan Trust for Culture." alt="Menara UMNO exterior" />
+    <div class="col fade-in d1">
+      <img class="zoomable" src="../assets/menara-umno/aerial-facade.jpg"
+           data-cap="Menara UMNO in its Penang context. © Aga Khan Trust for Culture." alt="Menara UMNO aerial view" />
+      <img class="zoomable" src="../assets/menara-umno/exterior-glazing.jpg"
+           data-cap="Façade detail: balconies, adjustable openings and shading. © Aga Khan Trust for Culture." alt="Façade glazing detail" />
+    </div>
+  </div>
+
+  <div class="cards c3" style="margin-top:20px;">
+    <div class="card fade-in"><div class="k">01</div><h3>How a wing wall works</h3><p>A vertical fin projecting from the façade catches wind arriving at an angle and funnels it into a high-pressure <b>"wind pocket"</b> against the wall. Open a door into that pocket and air is pushed through the floor plate rather than slipping past the building.</p></div>
+    <div class="card fade-in d1"><div class="k">02</div><h3>The occupant controls it</h3><p>Windows and balcony doors are adjustable, so the rate and direction of ventilation is tuned floor by floor. Lift lobbies, stairs and lavatories are naturally ventilated and daylit throughout.</p></div>
+    <div class="card fade-in d2"><div class="k">03</div><h3>Core on the east again</h3><p>Their own drawing is annotated "service cores on east provides shade in the morning". Second building, same move.</p></div>
+  </div>
+
+  <div class="pgrid" style="grid-template-columns: 1fr 1fr; margin-top:22px;">
+    <div>
+      <img class="figwide zoomable fade-in" src="../assets/menara-umno/floor-plan.jpg"
+           data-cap="Menara UMNO typical floor plan showing wing-walls, 'air-locks' and the location of openings A, B, C, D and X. © Aga Khan Trust for Culture." alt="Menara UMNO floor plan showing wing walls and openings" />
+      <p class="figcap"><b>How it works in plan.</b> The wing-walls (marked at X, C and B) project out from the façade. Wind arriving at an angle hits a wing-wall and is deflected into the corner behind it, building up pressure. The openable doors at A, B, C, D and X are positioned to sit in those high-pressure pockets, so opening one pushes air across the floor plate instead of letting it slide past the building. The balconies act as air-locks so the flow can be regulated.</p>
+    </div>
+    <div>
+      <img class="figwide zoomable fade-in d1" src="../assets/menara-umno/panel-project-data-wingwall-detail.jpg"
+           data-cap="Menara UMNO Aga Khan Award data panel, including the Wing Wall Detail diagram showing the 'wind pocket' formed on the inside face. © T.R. Hamzah &amp; Yeang / Aga Khan Trust for Culture." alt="Menara UMNO data panel with wing wall detail" />
+      <p class="figcap"><b>The detail, and the numbers.</b> Right of centre, the <b>Wing Wall Detail</b> diagram labels Outside, Inside and the <b>Wind Pocket</b> itself. The panel also carries their own project data: 21 storeys, 15,166 m², USD 7.98m, occupied 1998. Click to enlarge and read it.</p>
+    </div>
+  </div>
+
+  <img class="figwide zoomable fade-in d2" style="margin-top:22px;" src="../assets/menara-umno/panel-cfd-windrose-annotated-section.jpg"
+       data-cap="Menara UMNO Aga Khan Award panel. Left: computational fluid dynamics simulation of natural ventilation on a typical floor. Right: wind rose, and wind speed against percentage of windows open by façade. Centre: every device named with a leader line. © T.R. Hamzah &amp; Yeang / Aga Khan Trust for Culture." alt="Menara UMNO analysis panel" />
+  <p class="figcap">He was running <b>CFD ventilation simulations and wind-rose studies in the 1990s</b>. Worth knowing: the charge that he never did the analysis is simply wrong. What he never published is what the building actually achieved once occupied. Click to enlarge.</p>
+</section>
+
+<!-- ===================== 04 SELANGOR TURF CLUB ===================== -->
+<section class="section slide" id="turf-club">
+  <p class="eyebrow">04 · Selangor Turf Club, Kuala Lumpur <span class="status built">Built 1993</span></p>
+  <h2>A roof built as a stack of leaves.</h2>
+
+  <img class="phero zoomable fade-in" src="../assets/selangor-turf-club/stc-3.jpg"
+       data-cap="Selangor Turf Club grandstand, 1993, with Lobb Partnership. The roof is a series of overlapping louvred 'leaves'. © Aga Khan Trust for Culture." alt="Selangor Turf Club grandstand" />
+
+  <div class="split base-split" style="margin-top:20px;">
+    <div>
+      <ul class="points fade-in">
+        <li><span class="pi">01</span><div class="ptxt"><span class="psub">The Venturi roof</span><span class="pbody">The roof is built as overlapping leaves with open louvres between them. Hot air rises and escapes at the top, which pulls cooler air in below, and the gaps are shaped so rain still cannot get through. The overhang shades the glass underneath.</span></div></li>
+        <li><span class="pi">02</span><div class="ptxt"><span class="psub">Even the stables are passive</span><span class="pbody">700 stalls, naturally ventilated with roof ventilators. The strategy is applied to the whole complex, not just the showpiece.</span></div></li>
+        <li><span class="pi">03</span><div class="ptxt"><span class="psub">He drew the line himself</span><span class="pbody">The independent reviewer records that this building is <b>"not climatically designed, according to the architect, it is simply naturally ventilated."</b> Thirty percent of the grandstand is air-conditioned. He does not claim everything he builds is bioclimatic.</span></div></li>
+      </ul>
+    </div>
+    <div class="base-imgs fade-in d1">
+      <div class="factline" style="flex-direction:column; margin:0;">
+        <div><div class="n">34,462</div><div class="l">m² grandstand</div></div>
+        <div><div class="n">25,000</div><div class="l">spectator capacity</div></div>
+        <div><div class="n">30%</div><div class="l">air-conditioned. The rest runs on the roof.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <p class="src"><b>Sources</b><span class="s">Selangor Turf Club 1998 Technical Review, Hana Alamuddin, Aga Khan Award for Architecture.</span><span class="s">The club moved here from the city-centre site now occupied by the Petronas Towers.</span></p>
+</section>
+
+<!-- ===================== 05 NATIONAL LIBRARY ===================== -->
+<section class="section slide" id="national-library">
+  <p class="eyebrow green">05 · National Library, Singapore <span class="status built">Built 2004</span></p>
+  <h2>Nine-metre blades, and daylight driven underground.</h2>
+
+  <div class="pgrid">
+    <img class="phero zoomable fade-in" style="height:clamp(300px,44vh,470px);" src="../assets/national-library-singapore/photo-exterior-west-03.png"
+         data-cap="National Library Board Building, 100 Victoria Street, Singapore, 2004. 16 storeys, 98 metres. The deep horizontal blades are the shading. © T.R. Hamzah &amp; Yeang." alt="National Library from the west" />
+    <div class="col fade-in d1">
+      <img class="zoomable" src="../assets/national-library-singapore/photo-atrium-trees-06.png"
+           data-cap="The naturally ventilated atrium, planted with trees. © T.R. Hamzah &amp; Yeang." alt="Atrium with trees" />
+      <img class="zoomable" src="../assets/national-library-singapore/photo-courtyard-reading-04.png"
+           data-cap="Reading beside a planted courtyard. Nature within reach, not viewed from across an atrium. © T.R. Hamzah &amp; Yeang." alt="Reading beside planted courtyard" />
+    </div>
+  </div>
+
+  <div class="cards c3" style="margin-top:20px;">
+    <div class="card green-top fade-in"><div class="k">01</div><h3>Nine-metre blades</h3><p>Shading deep enough to be architecture rather than a screen. Two blocks split by a day-lit, naturally ventilated internal "street", bridged at the upper levels.</p></div>
+    <div class="card green-top fade-in d1"><div class="k">02</div><h3>Eco-cells</h3><p>Voids cut down through the building to bring daylight and natural ventilation to <b>basement level</b>. The ecological argument driven downwards, not just up the façade.</p></div>
+    <div class="card green-top fade-in d2"><div class="k">03</div><h3>Three-metre trees in the sky courts</h3><p>Real trees at height, on planted sky terraces, specified to add biodiversity to the site rather than to dress the elevation.</p></div>
+  </div>
+
+  <img class="figwide zoomable fade-in d2" style="margin-top:22px;" src="../assets/national-library-singapore/nl-panel-2-p-02.png"
+       data-cap="National Library passive-mode strategy panel: all sixteen floor plans, three elevations, the annotated device cutaway, and the 'Composite of Thermal Buffers' diagram at lower right. © T.R. Hamzah &amp; Yeang / Aga Khan Trust for Culture." alt="National Library strategy panel" />
+  <p class="figcap">The whole method on one sheet. <b>Click to enlarge</b> — the lower-right diagram, "Composite of Thermal Buffers", is the clearest statement of the core-as-shield idea anywhere in his work.</p>
+
+  <p class="src"><b>Also on this panel</b><span class="s">Applied features include <b>"Building Energy Embodiment Analysis"</b> and <b>"Design for Disassembly"</b> — on a 2004 building, roughly fifteen years before either became normal practice.</span></p>
+</section>
+
+<!-- ===================== 06 SOLARIS ===================== -->
+<section class="section slide" id="solaris">
+  <p class="eyebrow">06 · Solaris, Singapore <span class="status built">Built 2011</span></p>
+  <h2>1.5 kilometres of planting that never breaks.</h2>
+
+  <div class="pgrid">
+    <img class="phero zoomable fade-in" style="height:clamp(300px,44vh,470px);" src="../assets/solaris/solaris-4.jpg"
+         data-cap="Solaris, one-north, Singapore. The planted ramp runs continuously around the façade, three metres wide, with a service path alongside it. © T.R. Hamzah &amp; Yeang." alt="Solaris planted ramp on the façade" />
+    <div class="col fade-in d1">
+      <img class="zoomable" src="../assets/solaris/solaris-8.jpg"
+           data-cap="The ramp in use, planted with mature trees. © T.R. Hamzah &amp; Yeang." alt="People walking on the planted ramp" />
+      <img class="zoomable" src="../assets/solaris/solaris-6.jpg"
+           data-cap="Façade detail: the ramp reads as a continuous green band wrapping the building. © T.R. Hamzah &amp; Yeang." alt="Solaris façade detail" />
+    </div>
+  </div>
+
+  <div class="imgrow r4 fade-in d1" style="margin-top:18px;">
+    <div class="imgslot filled zoomable" data-full="../assets/solaris/solaris-1.jpg" data-cap="Solaris in its one-north context, Singapore. Photo via e-architect." style="background-image:url('../assets/solaris/solaris-1.jpg')"><span class="cap"><b>In context</b>one-north</span></div>
+    <div class="imgslot filled zoomable" data-full="../assets/solaris/solaris-7.jpg" data-cap="Looking down the ramp from above. The parallel service path for gardeners runs alongside. © T.R. Hamzah &amp; Yeang." style="background-image:url('../assets/solaris/solaris-7.jpg')"><span class="cap"><b>From above</b>Ramp and service path</span></div>
+    <div class="imgslot filled zoomable" data-full="../assets/solaris/solaris-3.jpg" data-cap="The naturally ventilated atrium, planted. © T.R. Hamzah &amp; Yeang." style="background-image:url('../assets/solaris/solaris-3.jpg')"><span class="cap"><b>Atrium</b>Naturally ventilated</span></div>
+    <div class="imgslot filled zoomable" data-full="../assets/solaris/solaris-5.jpg" data-cap="The ramp surface, three metres wide, with planting to one side and a glazed balustrade to the other. © T.R. Hamzah &amp; Yeang." style="background-image:url('../assets/solaris/solaris-5.jpg')"><span class="cap"><b>On the ramp</b>3 m wide, unbroken</span></div>
+  </div>
+
+  <div class="factline fade-in">
+    <div><div class="n">1.5 km</div><div class="l">continuous landscaped ramp, 3 m wide</div></div>
+    <div><div class="n">4,115</div><div class="l">m² of green ramp</div></div>
+    <div><div class="n">2,987</div><div class="l">m² of roof gardens</div></div>
+    <div><div class="n">8,363</div><div class="l">m² total landscaped area</div></div>
+  </div>
+
+  <div class="cards c3" style="margin-top:20px;">
+    <div class="card green-top fade-in"><div class="k">01</div><h3>Continuity is the whole point</h3><p>The ramp starts in the park at ground level, passes through a basement eco-cell and climbs unbroken to the roof gardens. The soil is never severed, so the ecological corridor genuinely climbs the building instead of being replicated on separate terraces.</p></div>
+    <div class="card green-top fade-in d1"><div class="k">02</div><h3>The detail that makes it survive</h3><p>A <b>dedicated parallel service path</b> runs alongside the ramp so gardeners never need access through the building. Most vertical planting fails on maintenance access. This solved it at design stage, and it is the single most transferable idea here.</p></div>
+    <div class="card green-top fade-in d2"><div class="k">03</div><h3>Watered by what falls on it</h3><p>Irrigation runs on rainwater harvested from the ramp's own perimeter drainage and the tower roof. In Singapore that works. In Riyadh it will not, and that is a difference worth holding on to.</p></div>
+  </div>
+
+  <p class="src"><b>Claimed, not measured</b><span class="s">BCA Green Mark Platinum; a claimed 36% energy reduction against local precedent; ETTV 39 W/m².</span><span class="s">These are design and certification figures from the practice, not an independent metered audit. No long-term condition survey exists.</span></p>
+</section>
+
+<!-- ===================== 07 EDITT ===================== -->
+<section class="section slide" id="editt">
+  <p class="eyebrow green">07 · EDITT Tower, Singapore <span class="status unbuilt">Design 1998</span></p>
+  <h2>A tower designed as a closed loop.</h2>
+
+  <p class="lead" style="max-width:80ch;">His most complete statement of what an ecological tower could be. Whatever happened to it commercially, the <b>design content</b> is the reason to study it: this is the full set of moves, applied at once, without compromise.</p>
+
+  <div class="pgrid">
+    <img class="phero zoomable fade-in" style="height:clamp(300px,44vh,470px);" src="../assets/editt/editt-1.jpg"
+         data-cap="EDITT Tower, Singapore. The planted ramp spirals continuously up the façade, with sky courts opening off it. Image courtesy T.R. Hamzah &amp; Yeang, via designboom." alt="EDITT Tower showing spiralling planted ramp" />
+    <div class="col fade-in d1">
+      <img class="zoomable" style="height:clamp(260px,38vh,400px);" src="../assets/editt/editt-2.jpg"
+           data-cap="EDITT Tower. Roughly half the surface area is living wall, carried on a continuous vegetated ramp. Image courtesy T.R. Hamzah &amp; Yeang, via designboom." alt="EDITT Tower elevation" />
+    </div>
+  </div>
+
+  <div class="cards c3" style="margin-top:20px;">
+    <div class="card green-top fade-in"><div class="k">01</div><h3>Half the surface is planted</h3><p>Not a green wall applied to a façade, but a continuous vegetated ramp spiralling from street level upward, so planting and public route are the same thing. Solaris is this idea, built and tamed.</p></div>
+    <div class="card green-top fade-in d1"><div class="k">02</div><h3>Water used more than once</h3><p>Rainwater and greywater captured, treated and recirculated, with a claimed reuse rate of <b>over 55%</b>. Water is treated as a stock to be cycled, not a supply to be consumed.</p></div>
+    <div class="card green-top fade-in d2"><div class="k">03</div><h3>Waste becomes fuel</h3><p>On-site <b>biogas generation</b> from organic waste, plus photovoltaics. The building metabolises what it produces instead of exporting it. This is ecomimesis taken literally.</p></div>
+  </div>
+
+  <div class="caveat green fade-in d1">
+    <p><b>What to take from it.</b> Three ideas survive translation to a desert: <b>planting and circulation as one continuous element</b>, <b>water cycled rather than consumed</b>, and <b>waste treated as a resource stream</b>. The living wall does not survive, for reasons we come to in chapter three. Study the loops, not the foliage.</p>
+  </div>
+
+  <p class="src"><b>Sources</b><span class="s">designboom; Inhabitat. Winner of the Ecological Design In The Tropics competition.</span><span class="s">Reuse and generation figures are design proposals, never built or measured.</span></p>
+</section>
+
+<!-- ===================== 08 WORKS ===================== -->
+<section class="section slide" id="project-index">
+  <p class="eyebrow green">08 · Works</p>
+  <h2>Works.</h2>
+
+  <p class="lead" style="max-width:82ch;">Everything we found. The seven covered in this chapter are marked <b class="accent-green">●</b>. Bracketed years are contested between sources. Where we could not establish whether something was built, it says so.</p>
+
+  <table class="data worklist fade-in">
+    <thead><tr><th style="width:86px;">Year</th><th>Project</th><th style="width:180px;">Location</th><th style="width:112px;">Status</th></tr></thead>
+    <tbody>
+      <tr><td>1981</td><td class="em">Plaza Atrium</td><td>Kuala Lumpur</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>1984</td><td class="em">Roof-Roof House <b class="accent-green">●</b></td><td>Selangor</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>(1985)</td><td class="em">Menara Boustead</td><td>Kuala Lumpur</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>(1985)</td><td class="em">IBM Plaza / Plaza VADS</td><td>Kuala Lumpur</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>1992</td><td class="em">Menara Mesiniaga <b class="accent-green">●</b></td><td>Subang Jaya</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>1993</td><td class="em">Selangor Turf Club <b class="accent-green">●</b></td><td>Kuala Lumpur</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>1994</td><td class="em">MBf Tower</td><td>Penang</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>1998</td><td class="em">Menara UMNO / JKP Tower <b class="accent-green">●</b></td><td>Penang</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>1998</td><td class="em">Menara AmBank</td><td>Kuala Lumpur</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>1998</td><td class="em">Guthrie Pavilion</td><td>Shah Alam</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>1998</td><td class="em">EDITT Tower <b class="accent-green">●</b></td><td>Singapore</td><td><span class="st u">Unbuilt</span></td></tr>
+      <tr><td>2004</td><td class="em">National Library <b class="accent-green">●</b></td><td>Singapore</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>(2005)</td><td class="em">K Tower / Al Asima</td><td>Kuwait City</td><td><span class="st u">Unbuilt</span></td></tr>
+      <tr><td>2010</td><td class="em">DiGi Technology Operation Centre</td><td>Shah Alam</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>2011</td><td class="em">Solaris, Fusionopolis 2B <b class="accent-green">●</b></td><td>Singapore</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>—</td><td class="em">Spire Edge Tower</td><td>Manesar, India</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>—</td><td class="em">Suasana Putrajaya 2C5</td><td>Putrajaya</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>—</td><td class="em">Ganendra Art House</td><td>Petaling Jaya</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>—</td><td class="em">TTDI Plaza</td><td>Kuala Lumpur</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>—</td><td class="em">Ibu Pejabat Kesadar</td><td>Gua Musang</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>—</td><td class="em">Bukit Bintang Park Roof Canopy</td><td>Kuala Lumpur</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>—</td><td class="em">Mewah Oils</td><td>Malaysia</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>—</td><td class="em">Basis Bay Cyberjaya DC2</td><td>Malaysia</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>—</td><td class="em">Great Ormond Street Hospital</td><td>London</td><td><span class="st b">Built</span></td></tr>
+      <tr><td>—</td><td class="em">Elephant &amp; Castle Eco-Towers</td><td>London</td><td><span class="st u">Unbuilt</span></td></tr>
+      <tr><td>—</td><td class="em">Jabal Omar</td><td>Mecca</td><td><span class="st u">Unbuilt</span></td></tr>
+      <tr><td>—</td><td class="em">Mixed-use tower</td><td>Dubai</td><td><span class="st u">Unbuilt</span></td></tr>
+      <tr><td>—</td><td class="em">Nagoya Tower</td><td>Japan</td><td><span class="st u">Unbuilt</span></td></tr>
+      <tr><td>—</td><td class="em">Xiong'an Station</td><td>China</td><td><span class="st n">No info</span></td></tr>
+      <tr><td>—</td><td class="em">HKU Human Research Tower</td><td>Hong Kong</td><td><span class="st n">No info</span></td></tr>
+      <tr><td>—</td><td class="em">Coronation Square T3</td><td>—</td><td><span class="st n">No info</span></td></tr>
+      <tr><td>—</td><td class="em">Gangxia Residence</td><td>Shenzhen</td><td><span class="st n">No info</span></td></tr>
+      <tr><td>—</td><td class="em">Idaman Residence</td><td>Malaysia</td><td><span class="st n">No info</span></td></tr>
+      <tr><td>—</td><td class="em">CY Cultural Building</td><td>—</td><td><span class="st n">No info</span></td></tr>
+      <tr><td>—</td><td class="em">Millennium Monument</td><td>—</td><td><span class="st n">No info</span></td></tr>
+      <tr><td>—</td><td class="em">Port Apartment</td><td>—</td><td><span class="st n">No info</span></td></tr>
+      <tr><td>—</td><td class="em">Kowloon Masterplan</td><td>Hong Kong</td><td><span class="st n">No info</span></td></tr>
+      <tr><td>—</td><td class="em">SOMA Masterplan</td><td>Bangalore</td><td><span class="st n">No info</span></td></tr>
+      <tr><td>—</td><td class="em">NITTE Masterplan</td><td>India</td><td><span class="st n">No info</span></td></tr>
+      <tr><td>—</td><td class="em">UM Masterplan</td><td>Malaysia</td><td><span class="st n">No info</span></td></tr>
+      <tr><td>—</td><td class="em">Mutiara Masterplan</td><td>Penang</td><td><span class="st n">No info</span></td></tr>
+      <tr><td>—</td><td class="em">Macau Waterfront</td><td>Macau</td><td><span class="st n">No info</span></td></tr>
+      <tr><td>—</td><td class="em">Sepang Waterfront</td><td>Malaysia</td><td><span class="st n">No info</span></td></tr>
+    </tbody>
+  </table>
+
+  <p class="src"><b>Where to dig</b><span class="s"><b>archnet.org</b> — the Aga Khan archive. The best source, and the only place with independent review reports. Search "Yeang".</span><span class="s"><b>web.archive.org</b> — the old trhamzahyeang.com holds far more project material than the current site.</span><span class="s"><b>skyscrapercenter.com</b> — verified heights, dates and floor counts.</span><span class="s">Our notes on every project: <b>research/ken-yeang/04-projects-catalogue.md</b>.</span></p>
+</section>
+
+<!-- ===================== 09 THE PATTERN ===================== -->
+<section class="closing slide" id="the-pattern">
+  <p class="eyebrow">Seven projects, one pattern</p>
+  <h2 class="pbn-title">The built ones are the quiet ones.</h2>
+
+  <p class="lead" style="max-width:70ch; margin-top:10px;">Everything with sky courts, deep shading and a displaced core got built and is still standing. Everything with living walls, biogas and closed water loops stayed on paper. <b>Take the moves from the built half, and the ambition from the unbuilt half.</b></p>
+</section>
+
+<!-- ===================== LIGHTBOX ===================== -->
+<div class="lb" id="lb">
+  <span class="x" id="lbx">×</span>
+  <img id="lbimg" src="" alt="" />
+  <p class="cap" id="lbcap"></p>
+</div>
+
+<script src="../js/script.js"></script>
+<script>
+(function(){
+  var lb=document.getElementById('lb'), im=document.getElementById('lbimg'), cp=document.getElementById('lbcap');
+  function open(src, cap){ im.src=src; cp.textContent=cap||''; lb.classList.add('open'); document.body.style.overflow='hidden'; }
+  function close(){ lb.classList.remove('open'); im.src=''; document.body.style.overflow=''; }
+  document.querySelectorAll('.zoomable').forEach(function(el){
+    el.addEventListener('click', function(){
+      var cap = el.getAttribute('data-cap') || '';
+      if (el.tagName.toLowerCase() === 'img') { open(el.currentSrc || el.src, cap); }
+      else if (el.hasAttribute('data-full')) { open(el.getAttribute('data-full'), cap); }
+      else {
+        // SVG: serialise to a data URL so it can be shown large
+        var s = new XMLSerializer().serializeToString(el);
+        open('data:image/svg+xml;charset=utf-8,' + encodeURIComponent(s), cap);
+      }
+    });
+  });
+  document.getElementById('lbx').addEventListener('click', close);
+  lb.addEventListener('click', function(e){ if(e.target===lb || e.target===im) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && lb.classList.contains('open')) close(); });
+})();
+</script>
+</body>
+</html>

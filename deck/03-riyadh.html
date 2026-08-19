@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Riyadh · Ken Yeang · External Reference</title>
+<link rel="stylesheet" href="../css/style.css" />
+<style>
+  .caveat { border-left: 3px solid #B8924E; padding: 12px 0 12px 18px; margin-top: 20px; background: #FBF7EE; }
+  .caveat p { margin: 0; font-size: 0.92rem; line-height: 1.55; }
+  .caveat.green { border-left-color:#6E9E67; background:#F3F7F1; }
+  .caveat.red { border-left-color:#8C3A3A; background:#FBF3F3; }
+  .factline { display:flex; flex-wrap:wrap; gap:0; border-top:1px solid #d8cbb0; border-bottom:1px solid #d8cbb0; margin:18px 0 4px; }
+  .factline div { flex:1 1 0; min-width:120px; padding:14px 16px; border-right:1px solid #e4dac4; }
+  .factline div:last-child { border-right:0; }
+  .factline .n { font-family:var(--serif); font-size:1.5rem; color:#2F5D3F; line-height:1.1; }
+  .factline .n.warn { color:#8C3A3A; }
+  .factline .l { font-size:0.74rem; color:#7A7263; margin-top:5px; letter-spacing:0.05em; }
+
+  /* move list: claim + do this */
+  .moves { border-top:1px solid #d8cbb0; margin-top:8px; }
+  .moves ul { padding:0; margin:0; }
+  .moves li { list-style:none; display:grid; grid-template-columns: 40px 1fr 1fr; gap:24px;
+    padding:17px 0; border-bottom:1px solid #e8dfca; align-items:start; }
+  .moves .mn { font-family:var(--serif); font-size:1.1rem; color:#2F5D3F; padding-top:1px; }
+  .moves .mt { font-weight:700; font-size:1rem; display:block; margin-bottom:5px; }
+  .moves .mb { font-size:0.87rem; line-height:1.55; color:#5C5648; }
+  .moves .md { font-size:0.87rem; line-height:1.55; color:#2F5D3F; }
+  .moves .md > b:first-child { display:block; font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase;
+    color:#8A8271; margin-bottom:4px; font-weight:700; }
+  .moves.invert .mn { color:#B8924E; }
+  .moves.invert .md { color:#8A6D2B; }
+  .moves.drop .mn { color:#8C3A3A; }
+  .moves.drop li { grid-template-columns: 40px 1fr; }
+  .movehead { display:grid; grid-template-columns:40px 1fr 1fr; gap:24px; font-size:0.66rem;
+    letter-spacing:0.16em; text-transform:uppercase; color:#8A8271; padding-bottom:9px; }
+  .swap { color:#8A8271; font-weight:400; }
+
+  .bigstat { display:grid; grid-template-columns: repeat(3,1fr); gap:0; border:1px solid #d8cbb0; margin:20px 0 6px; }
+  .bigstat > div { padding:22px 20px; border-right:1px solid #e4dac4; }
+  .bigstat > div:last-child { border-right:0; }
+  .bigstat .bn { font-family:var(--serif); font-size:2.1rem; line-height:1.05; color:#2F5D3F; }
+  .bigstat .bn.warn { color:#8C3A3A; }
+  .bigstat .bl { font-size:0.82rem; color:#5C5648; margin-top:9px; line-height:1.5; }
+</style>
+</head>
+<body>
+
+<a href="index.html#menu" class="back-btn" id="backBtn">‹&nbsp; Contents</a>
+
+<!-- ===================== CHAPTER OPEN ===================== -->
+<section class="chapter-open slide">
+  <p class="kicker">Chapter 03</p>
+  <h1>Riyadh</h1>
+  <p class="intro">He built in the wet tropics. We are building in a dry desert. Here is what we keep, what we reverse, what we drop, and the one objection we cannot argue our way out of.</p>
+  <a href="#riyadh-index" class="scroll-cue" style="position:absolute; bottom:34px; left:8vw; transform:none;">
+    <span>Index</span><span class="arrow"></span>
+  </a>
+</section>
+
+<!-- ===================== INDEX ===================== -->
+<section class="vindex slide" id="riyadh-index">
+  <h2>Riyadh</h2>
+  <ul class="toc">
+    <li><a href="#the-gap"><span class="tnum">01</span><span class="ttl">Riyadh is not a hot Kuala Lumpur</span><span class="tds">Two of the three differences work in our favour.</span></a></li>
+    <li><a href="#transfers"><span class="tnum">02</span><span class="ttl">Take these unchanged</span><span class="tds">Four moves that work here exactly as he used them.</span></a></li>
+    <li><a href="#inverts"><span class="tnum">03</span><span class="ttl">Take these, but reverse them</span><span class="tds">Six moves that look right and perform badly if copied.</span></a></li>
+    <li><a href="#discard"><span class="tnum">04</span><span class="ttl">Leave these behind</span><span class="tds">Four things that do not work in a desert.</span></a></li>
+    <li><a href="#water"><span class="tnum">05</span><span class="ttl">Dry air is our cooling machine</span><span class="tds">44 degrees down to 24, using only water.</span></a></li>
+    <li><a href="#carbon"><span class="tnum">06</span><span class="ttl">What we do about the concrete</span><span class="tds">Four moves, all of which must start at concept stage.</span></a></li>
+    <li><a href="#what-we-do"><span class="tnum">07</span><span class="ttl">What we do on Burj Fitrah</span><span class="tds">Six decisions to take out of this session.</span></a></li>
+  </ul>
+</section>
+
+<!-- ===================== 01 THE GAP ===================== -->
+<section class="section slide" id="the-gap">
+  <p class="eyebrow green">01 · The Climate</p>
+  <h2>Riyadh is not a hot Kuala Lumpur.</h2>
+
+  <p class="lead" style="max-width:80ch;">Both are hot. That is where the similarity ends, and the differences are not small adjustments — they reverse several of his design rules. Two of the three work strongly in our favour.</p>
+
+  <div class="factline fade-in">
+    <div><div class="n">44&nbsp;°C</div><div class="l">typical July afternoon in Riyadh</div></div>
+    <div><div class="n">27&nbsp;°C</div><div class="l">and it only falls to this by dawn</div></div>
+    <div><div class="n">10%</div><div class="l">humidity in July. Kuala Lumpur sits near 70%</div></div>
+    <div><div class="n">0&nbsp;mm</div><div class="l">rain from June to September. About 100 mm all year</div></div>
+  </div>
+
+  <div class="cards c3" style="margin-top:24px;">
+    <div class="card green-top fade-in">
+      <div class="k">01</div><h3>The night is 17 degrees cooler than the day</h3>
+      <p>Riyadh drops from about 44 °C in the afternoon to about 27 °C by dawn. Kuala Lumpur barely moves, maybe 7 degrees.<br><br><b>Why we care:</b> heavy materials can absorb heat all day and release it at night. In the tropics that never works, so Yeang built light. Here, weight becomes useful.</p>
+    </div>
+    <div class="card green-top fade-in d1">
+      <div class="k">02</div><h3>The air is bone dry</h3>
+      <p>At 10% humidity the air is desperate to absorb water, and absorbing water cools it. At Kuala Lumpur's 70% the air is nearly full and evaporation does almost nothing.<br><br><b>Why we care:</b> we can cool outdoor air with water alone. This is the single biggest opportunity he never had. See slide 05.</p>
+    </div>
+    <div class="card green-top fade-in d2">
+      <div class="k">03</div><h3>Dust, not damp</h3>
+      <p>Shamal dust storms run three to five days at a time, several times a year. There is almost no rain and no humidity.<br><br><b>Why we care:</b> his details fight mould, condensation and driving rain. Ours must fight dust getting in, materials expanding and contracting, and UV. Different problem, different detailing budget.</p>
+    </div>
+  </div>
+
+  <p class="src"><b>Sources</b><span class="s">Riyadh climate normals; research file 05, section A1.</span><span class="s">Latitude 24.7° N. Annual solar radiation about 2,267 kWh/m², roughly a third more than Kuala Lumpur receives through its cloud cover.</span></p>
+</section>
+
+<!-- ===================== 02 TRANSFERS ===================== -->
+<section class="section slide" id="transfers">
+  <p class="eyebrow green">02 · Keep</p>
+  <h2>Take these unchanged.</h2>
+
+  <div class="moves fade-in">
+    <div class="movehead"><div></div><div>The move</div><div>What we do with it</div></div>
+    <ul>
+      <li><span class="mn">01</span>
+        <div><span class="mt">Shape the building before you size the machines</span><span class="mb">Orientation, massing, depth, shading and mass are free. Cooling plant is not, and it is paid for again every year. He always settles the free things first.</span></div>
+        <div class="md"><b>Do this</b>No MEP sizing until orientation, floor-plate depth and the shading strategy are fixed. The stronger Riyadh sun means the gap between a badly shaped and a well shaped tower is <b>wider</b> here than in the tropics, so this is worth more to us than it was to him.</div>
+      </li>
+      <li><span class="mn">02</span>
+        <div><span class="mt">Put the lifts and stairs on the east and west faces</span><span class="mb">Low morning and evening sun strikes those faces almost horizontally. A horizontal louvre cannot block it. A solid block of lifts, stairs, plant and lavatories can, and those spaces do not need a view or a steady temperature.</span></div>
+        <div class="md"><b>Do this</b>Cores east and west, occupied space facing north and south. It also forces the long, narrow, north-south plan a desert tower wants anyway. <b>This is our headline move, and it is his own signature.</b></div>
+      </li>
+      <li><span class="mn">03</span>
+        <div><span class="mt">Keep the planting joined to the ground</span><span class="mb">His point is that isolated planting is not habitat. Wildlife needs a continuous route. A green terrace on floor 40 with nothing below it is a pot plant with a good view.</span></div>
+        <div class="md"><b>Do this</b>One continuous planted route from ground level upward, and plant what actually grows here: acacia, ziziphus, wadi species. A local ecology reconstructed vertically is far more defensible than an imported one.</div>
+      </li>
+      <li><span class="mn">04</span>
+        <div><span class="mt">Decide the water before the greenery</span><span class="mb">He treats nature, water, engineering and people as one system, and says the scarcest one should lead. Here that is unarguably water.</span></div>
+        <div class="md"><b>Do this</b>Set an annual water budget in litres before anyone draws a planted terrace. The budget then tells us how much greenery is honest, rather than the render telling us afterwards.</div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== 03 INVERTS ===================== -->
+<section class="section slide" id="inverts">
+  <p class="eyebrow" style="color:#B8924E;">03 · Reverse</p>
+  <h2>Take these, but reverse them.</h2>
+
+  <p class="lead" style="max-width:80ch;">These are the dangerous ones. Copied straight from his tropical work they look correct, they photograph well, and they perform badly or fail outright.</p>
+
+  <div class="moves invert fade-in">
+    <div class="movehead"><div></div><div>What he does in the tropics</div><div>What we do instead</div></div>
+    <ul>
+      <li><span class="mn">01</span>
+        <div><span class="mt">Green over the whole façade</span><span class="mb">In Singapore rain is free and constant, so planting can cover everything.</span></div>
+        <div class="md"><b>Reverse it</b>Planting only where there is already shade and a water line: inside the cooled sky courts, at the base, on protected terraces. <b>Rule of thumb: if a plant needs its own irrigation run to survive, it has to earn its place.</b></div>
+      </li>
+      <li><span class="mn">02</span>
+        <div><span class="mt">Windows open all year</span><span class="mb">Tropical air is warm but usable. Outside air is always a resource.</span></div>
+        <div class="md"><b>Reverse it</b>For roughly four months, outside air is a heat source, not relief. The façade must be able to <b>shut</b>. Openable roughly October to April, sealed June to September, with the switch designed rather than left to occupants.</div>
+      </li>
+      <li><span class="mn">03</span>
+        <div><span class="mt">Lightweight construction</span><span class="mb">Mass is useless in the tropics because the night never gets cool enough to discharge it.</span></div>
+        <div class="md"><b>Reverse it</b>Use mass. From October to April the cool night genuinely recharges it. In July, when nights stay at 27 °C, mass no longer gives free cooling but still <b>shifts the load off the afternoon peak</b>, which cuts plant size and tariff cost.</div>
+      </li>
+      <li><span class="mn">04</span>
+        <div><span class="mt">Sky courts open to the breeze</span><span class="mb">An open terrace works in a climate with a dependable breeze and tolerable air.</span></div>
+        <div class="md"><b>Reverse it</b>Enclose them, shade them, and cool them with water. An open terrace in July is unusable; a shaded, evaporatively cooled court is comfortable. <b>He did exactly this himself at K Tower in Kuwait.</b></div>
+      </li>
+      <li><span class="mn">05</span>
+        <div><span class="mt">Shade with thin screens</span><span class="mb">Louvres and fins, because there is no benefit in weight.</span></div>
+        <div class="md"><b>Reverse it</b>Shade <b>and</b> weight together. Deep reveals, thick shaded walls, small protected openings. This is where Najdi courtyard building, not Malaysia, is the reference we should be looking at.</div>
+      </li>
+      <li><span class="mn">06</span>
+        <div><span class="mt">Mashrabiya as a decorative pattern</span><span class="mb">Usually applied as cultural surface decoration on Gulf projects.</span></div>
+        <div class="md"><b>Reverse it</b>Make it a working component doing five jobs at once: block sun, cut glare, give privacy, control airflow, and <b>filter dust</b>. Specify it by performance, not by pattern, and it stops being decoration.</div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== 04 DISCARD ===================== -->
+<section class="section slide" id="discard">
+  <p class="eyebrow" style="color:#8C3A3A;">04 · Drop</p>
+  <h2>Leave these behind.</h2>
+
+  <div class="moves drop fade-in">
+    <ul>
+      <li><span class="mn">01</span>
+        <div><span class="mt">Rainwater as a real water source</span><span class="mb">About 100 mm falls all year, and none of it between June and September. Keep gutters and tanks for flash-flood management, but a rainwater irrigation claim in Riyadh will be laughed at. Irrigation runs on treated wastewater.</span></div></li>
+      <li><span class="mn">02</span>
+        <div><span class="mt">Permanently open, breezy façades</span><span class="mb">Dust storms, 44 °C air, and wind pressure at supertall height rule it out. Every opening needs to be closeable and filtered.</span></div></li>
+      <li><span class="mn">03</span>
+        <div><span class="mt">Designing around a prevailing breeze</span><span class="mb">Average wind is a weak 3.9 m/s and there is no reliable sea breeze to plan around, unlike Penang. If we want air to move, we drive it with the stack effect, which a tall building generates for free.</span></div></li>
+      <li><span class="mn">04</span>
+        <div><span class="mt">Detailing against damp</span><span class="mb">Mould, condensation, timber rot and deep overhangs against driving rain are near-irrelevant here. That detailing effort should be spent on dust sealing, thermal movement and UV instead.</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== 05 WATER ===================== -->
+<section class="section slide" id="water">
+  <p class="eyebrow green">05 · Cooling</p>
+  <h2>Dry air is our cooling machine.</h2>
+
+  <p class="lead" style="max-width:80ch;">Dry air cools down when water evaporates into it. The drier the air, the more it cools. Riyadh's July air is about as dry as inhabited air gets, which means the climate that makes irrigation expensive also hands us the cheapest cooling there is.</p>
+
+  <div class="bigstat fade-in">
+    <div><div class="bn">44 °C <span style="font-size:1.1rem; color:#8A8271;">→</span> 24 °C</div><div class="bl">What water alone does to July afternoon air, at a good evaporative cooler's performance. No refrigeration, no compressor.</div></div>
+    <div><div class="bn">28 °C</div><div class="bl">Even with a conservative, cheaper system. Still comfortable shade on the worst afternoon of the year.</div></div>
+    <div><div class="bn">Near zero</div><div class="bl">What the same technique achieves in Kuala Lumpur. At 70% humidity the air is already nearly full and cannot take the water.</div></div>
+  </div>
+
+  <div class="caveat green fade-in d1">
+    <p><b>This is the most important idea in the chapter.</b> It is why the open tropical sky court becomes a shaded, cooled desert court, and it is exactly what Yeang proposed on the north face of his Kuwait tower. It converts our worst climate problem into the thing that makes outdoor space usable in July. <b>Every sky court, podium and terrace on Burj Fitrah should be designed around it.</b></p>
+  </div>
+
+  <div class="caveat fade-in d1">
+    <p><b>And it costs water, so budget it.</b> Evaporative cooling consumes what it evaporates. Irrigation and cooling draw on the same budget, which is the argument for treated wastewater supply and a xeric planting palette. Say the number out loud in the proposal rather than leaving it to be discovered.</p>
+  </div>
+
+  <p class="src"><b>Sources</b><span class="s">Calculated from Riyadh July design conditions, research file 05 section A1. Marked as our own calculation in the source file, not a published figure.</span><span class="s">Engineers to confirm before any client-facing use.</span></p>
+</section>
+
+<!-- ===================== 06 CARBON ===================== -->
+<section class="section slide" id="carbon">
+  <p class="eyebrow green">06 · Carbon</p>
+  <h2>Four things we can actually do about the concrete.</h2>
+
+  <p class="lead" style="max-width:82ch;">Most of a tower's carbon is emitted <b>before anyone moves in</b>, making the concrete and steel. Energy efficiency does not touch it. These four moves do, and all four have to be started at concept stage or they are lost.</p>
+
+  <div class="moves fade-in">
+    <div class="movehead"><div></div><div>The move</div><div>What it is worth, and who does it</div></div>
+    <ul>
+      <li><span class="mn">01</span>
+        <div><span class="mt">Replace part of the cement</span><span class="mb">Cement is where nearly all the concrete carbon sits. Substituting a share of it is the single biggest technical lever available to us.</span></div>
+        <div class="md"><b>Worth roughly a quarter to a third of the concrete's carbon</b>The catch: the two standard substitutes are by-products of coal power and blast furnaces, and Saudi Arabia has little of either, so they would be imported. The local alternative is <b>natural volcanic pozzolan from the harrat fields in the west</b>. <b>Action:</b> ask a Saudi ready-mix supplier to price and test both, now, before the structural scheme is fixed.</div>
+      </li>
+      <li><span class="mn">02</span>
+        <div><span class="mt">Use less material for the same building</span><span class="mb">Higher strength concrete, efficient floor systems, a structural grid chosen for material efficiency rather than habit. Height compounds this: every extra floor adds material to everything below it.</span></div>
+        <div class="md"><b>Worth 10 to 20% if it is a target from day one</b><b>Action:</b> give the structural engineer a <b>kilograms of concrete per m²</b> target at concept stage, in the same brief as the cost target. Nobody optimises for a number they were never given.</div>
+      </li>
+      <li><span class="mn">03</span>
+        <div><span class="mt">Make it last, and make it changeable</span><span class="mb">The carbon is spent once. Spread across a building that serves 100 years and several different uses, the annual figure falls. Spread across one that is refitted or replaced in 40, it does not.</span></div>
+        <div class="md"><b>Changes the denominator, not the number, and that is still real</b><b>Action:</b> generous floor-to-floor heights, serviceable structure, cores and risers sized to be re-planned. Then state a design life in the proposal and hold ourselves to it.</div>
+      </li>
+      <li><span class="mn">04</span>
+        <div><span class="mt">Measure it and publish it</span><span class="mb">No Gulf tower has ever published a whole-life carbon figure. Not Burj Khalifa, KAPSARC, Msheireb, Masdar or Al Bahar. They hold certificates; none holds a number.</span></div>
+        <div class="md"><b>Worth nothing in carbon, and everything in position</b>It also forces the three moves above to actually happen, because you cannot improve what nobody counted. <b>Action:</b> commission the assessment at <b>concept</b> stage, not at completion, so it can still change decisions.</div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="caveat fade-in d1">
+    <p><b>And the honest limit.</b> Do all four well and the concrete still lands near <b>350 kg of CO₂ per m²</b> — which is the strictest cap in force anywhere for an <i>entire</i> building, and we would have spent it on the structure alone. The only lever big enough to close that gap is building less tall, and that is not ours to pull. If the height is fixed by the brief, we have bought a landmark with carbon. Worth saying to each other now rather than hearing it in a review.</p>
+  </div>
+
+  <p class="src"><b>Caveats</b><span class="s">Percentages are indicative ranges from our own working, not a published study. Engineers to confirm before any of it reaches a client.</span><span class="s">Never claim the tower is low carbon, that density justifies the height, or that energy performance answers the objection.</span></p>
+</section>
+
+<!-- ===================== 07 WHAT WE DO ===================== -->
+<section class="section slide" id="what-we-do">
+  <p class="eyebrow green">07 · Decisions</p>
+  <h2>What we do on Burj Fitrah.</h2>
+
+  <div class="cards c3">
+    <div class="card green-top fade-in"><div class="k">01</div><h3>Cores east and west</h3><p>Lifts, stairs and plant on the two faces taking low sun. Occupied space north and south. Fix this at massing stage, because everything else follows from the plan it produces.</p></div>
+    <div class="card green-top fade-in d1"><div class="k">02</div><h3>Cool the courts with water</h3><p>Every sky court shaded, enclosable and evaporatively cooled. 44 °C to 24 °C on dry air alone. This is what makes outdoor space work in July, and it is the heart of our climate story.</p></div>
+    <div class="card green-top fade-in d2"><div class="k">03</div><h3>Water budget before greenery</h3><p>Litres per year agreed first, on treated wastewater, with a xeric palette. The budget decides the planting. Publish it rather than hide it.</p></div>
+  </div>
+
+  <div class="cards c3" style="margin-top:18px;">
+    <div class="card fade-in"><div class="k">04</div><h3>Build heavy where it pays</h3><p>Mass and deep shade together. It works for eight months of the year and shifts peak load in the other four. Najdi building is the reference, not Malaysia.</p></div>
+    <div class="card fade-in d1"><div class="k">05</div><h3>Detail for dust</h3><p>His envelopes corroded in humidity. Ours face dust, thermal movement and UV. Move the detailing effort there, and hold a higher standard than his built work reached.</p></div>
+    <div class="card fade-in d2"><div class="k">06</div><h3>Publish the carbon</h3><p>Nobody in the Gulf has. Going first turns our most exposed flank into the most defensible thing about the project.</p></div>
+  </div>
+
+</section>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
